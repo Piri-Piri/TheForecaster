@@ -21,4 +21,11 @@ public struct GlobalConstants {
         public static let kCountry = "country"
         public static let kTimestamp = "timestamp"
     }
+    
+    public struct ForecastDictionaryNames {
+        public static let kCurrently = "currently"
+        public static let kIcon = "icon"
+        public static let kTemperature = "temperature"
+        public static let kSummary = "summary"
+    }
 }

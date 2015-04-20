@@ -49,13 +49,13 @@ class ViewController: UIViewController {
         ForecastNetwork.requestWeather(latitude: latitude, longitude: longitude) { (responseDictionary) -> () in
             if let response = responseDictionary {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    let currentConditionsDictionary = response["currently"] as! NSDictionary
+                    let currentConditionsDictionary = response[GlobalConstants.ForecastDictionaryNames.kCurrently] as! NSDictionary
                     
-                    let iconName = currentConditionsDictionary["icon"] as! String
+                    let iconName = currentConditionsDictionary[GlobalConstants.ForecastDictionaryNames.kIcon] as! String
                     self.weatherImageView.image = UIImage(named: iconName)
-                    let temperature = currentConditionsDictionary["temperature"] as! Double
-                    self.temperatureLabel.text = "\(temperature) ℃"
-                    let conditions = currentConditionsDictionary["summary"] as! String
+                    let temperature = currentConditionsDictionary[GlobalConstants.ForecastDictionaryNames.kTemperature] as! Double
+                    self.temperatureLabel.text = "\(temperature) ℉"
+                    let conditions = currentConditionsDictionary[GlobalConstants.ForecastDictionaryNames.kSummary] as! String
                     self.weatherConditionLabel.text = conditions
                     
                     self.locationLabel.text = "\(city), \(state), \(country)"
