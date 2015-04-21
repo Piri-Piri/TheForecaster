@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TheForecaster_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="bbs-6i-3lE">
+                            <items>
+                                <label width="65" height="45" alignment="left" text="70" id="VOa-Mu-T1o"/>
+                                <imageView width="45" height="45" alignment="right" image="nodata" id="1pA-y0-1Es"/>
+                            </items>
+                        </group>
+                        <label width="136" height="42" alignment="left" text="Conditions" textAlignment="center" id="FPr-E8-bHB"/>
+                        <label alignment="left" text="Location" id="Wlp-Lk-xId"/>
+                        <map height="100" alignment="left" id="zAe-9p-zN4"/>
+                        <label alignment="left" text="Last Updated" id="2As-nv-o3W"/>
+                        <button width="1" alignment="left" title="Hourly Weather" id="Pah-8C-hvf">
+                            <color key="backgroundColor" red="0.55100707010000005" green="0.75927156750000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="hourlyWeatherButtonPressed" destination="AgC-eL-Hgc" id="2ur-zh-gE9"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Refresh" id="cXo-Tg-4dm">
+                            <color key="backgroundColor" red="0.1215686275" green="0.53333333329999999" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="refreshButtonPressed" destination="AgC-eL-Hgc" id="bdc-UJ-WE1"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="conditionsLabel" destination="FPr-E8-bHB" id="8oZ-12-V0p"/>
+                        <outlet property="lastUpdateLabel" destination="2As-nv-o3W" id="iAn-Sl-ajj"/>
+                        <outlet property="locationLabel" destination="Wlp-Lk-xId" id="OBU-GW-wDj"/>
+                        <outlet property="map" destination="zAe-9p-zN4" id="AIK-Dp-QYW"/>
+                        <outlet property="temperatureLabel" destination="VOa-Mu-T1o" id="Ib4-xi-217"/>
+                        <outlet property="weatherIconImage" destination="1pA-y0-1Es" id="89N-m9-iac"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--HourlyWeatherController-->
+        <scene sceneID="kt5-L3-jhe">
+            <objects>
+                <controller identifier="HourlyWeatherController" id="sjN-lQ-yBo" customClass="HourlyWeatherInterfaceController" customModule="TheForecaster">
+                    <items>
+                        <group width="1" alignment="left" id="Fr2-Y2-oNQ">
+                            <items>
+                                <button width="52" alignment="left" title="&lt;" id="UIW-tg-x3r">
+                                    <color key="backgroundColor" red="0.55100707010000005" green="0.75927156750000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="previousButtonPressed" destination="sjN-lQ-yBo" id="Raf-rN-NK8"/>
+                                    </connections>
+                                </button>
+                                <button width="52" alignment="right" title="&gt;" id="TJ6-Ts-cs5">
+                                    <color key="backgroundColor" red="0.55100707010000005" green="0.75927156750000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="nextButtonPressed" destination="sjN-lQ-yBo" id="tQo-a0-y5L"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Time" id="5h0-zK-VCf"/>
+                        <group width="1" alignment="left" id="L7E-fT-9qE">
+                            <items>
+                                <label width="65" height="50" alignment="left" text="Label" id="hsW-6g-oOt"/>
+                                <imageView width="50" height="50" alignment="right" id="uOu-pD-vxD"/>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Chance of Rain" id="r9v-GZ-EME"/>
+                        <label width="1" height="32" alignment="left" text="25%" textAlignment="center" id="ekk-me-Bls"/>
+                        <label alignment="left" text="Summary" id="DEg-Tr-g3Q"/>
+                    </items>
+                    <connections>
+                        <outlet property="chanceOfRainLabel" destination="ekk-me-Bls" id="3Ob-W5-3TG"/>
+                        <outlet property="nextButtonPressed" destination="TJ6-Ts-cs5" id="p1o-nz-mHW"/>
+                        <outlet property="summaryLabel" destination="DEg-Tr-g3Q" id="C9N-IU-La0"/>
+                        <outlet property="temperatureLabel" destination="hsW-6g-oOt" id="QUD-pa-Ka7"/>
+                        <outlet property="timeLabel" destination="5h0-zK-VCf" id="Gh8-kM-Ga1"/>
+                        <outlet property="weatherIconImage" destination="uOu-pD-vxD" id="ZzZ-8D-sJS"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="434" y="409.25"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="TheForecaster_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y"/>
+                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="671"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="TheForecaster_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+</document>

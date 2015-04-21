@@ -27,5 +27,11 @@ public struct GlobalConstants {
         public static let kIcon = "icon"
         public static let kTemperature = "temperature"
         public static let kSummary = "summary"
+        public static let kHourly = "hourly"
+        public static let kData = "data"
+    }
+    
+    public struct NSUserDefaultsKey {
+        public static let kLocationKey = "LOCATION_INFO"
     }
 }

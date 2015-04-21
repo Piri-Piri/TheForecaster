@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63097F111AE5AF17007D2032 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63097F101AE5AF17007D2032 /* InterfaceController.swift */; };
+		63097F131AE5AF17007D2032 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63097F121AE5AF17007D2032 /* NotificationController.swift */; };
+		63097F151AE5AF17007D2032 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63097F141AE5AF17007D2032 /* GlanceController.swift */; };
+		63097F171AE5AF17007D2032 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63097F161AE5AF17007D2032 /* Images.xcassets */; };
+		63097F1B1AE5AF17007D2032 /* TheForecaster WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 63097F1A1AE5AF17007D2032 /* TheForecaster WatchKit App.app */; };
+		63097F231AE5AF17007D2032 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63097F211AE5AF17007D2032 /* Interface.storyboard */; };
+		63097F251AE5AF17007D2032 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63097F241AE5AF17007D2032 /* Images.xcassets */; };
+		63097F281AE5AF17007D2032 /* TheForecaster WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 63097F0B1AE5AF17007D2032 /* TheForecaster WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		63155C901AE0085C00CE0D22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63155C8F1AE0085C00CE0D22 /* AppDelegate.swift */; };
 		63155C921AE0085C00CE0D22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63155C911AE0085C00CE0D22 /* ViewController.swift */; };
 		63155C951AE0085C00CE0D22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63155C931AE0085C00CE0D22 /* Main.storyboard */; };
 		63155C971AE0085C00CE0D22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63155C961AE0085C00CE0D22 /* Images.xcassets */; };
 		63155C9A1AE0085C00CE0D22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63155C981AE0085C00CE0D22 /* LaunchScreen.xib */; };
 		63155CA61AE0085C00CE0D22 /* TheForecasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63155CA51AE0085C00CE0D22 /* TheForecasterTests.swift */; };
+		634502A21AE638140063A8CC /* HourlyWeatherInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634502A11AE638140063A8CC /* HourlyWeatherInterfaceController.swift */; };
+		634502A31AE638140063A8CC /* HourlyWeatherInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634502A11AE638140063A8CC /* HourlyWeatherInterfaceController.swift */; };
 		63FEA3881AE5205400D15D62 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FEA3871AE5205400D15D62 /* LocationController.swift */; };
 		63FEA3931AE59B7900D15D62 /* WeatherShare.h in Headers */ = {isa = PBXBuildFile; fileRef = 63FEA3921AE59B7900D15D62 /* WeatherShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63FEA3991AE59B7900D15D62 /* WeatherShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FEA38E1AE59B7900D15D62 /* WeatherShare.framework */; };
@@ -24,6 +34,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		63097F1C1AE5AF17007D2032 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63155C821AE0085C00CE0D22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63097F191AE5AF17007D2032;
+			remoteInfo = "TheForecaster WatchKit App";
+		};
+		63097F261AE5AF17007D2032 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63155C821AE0085C00CE0D22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63097F0A1AE5AF17007D2032;
+			remoteInfo = "TheForecaster WatchKit Extension";
+		};
 		63155CA01AE0085C00CE0D22 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 63155C821AE0085C00CE0D22 /* Project object */;
@@ -55,6 +79,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		63097F2F1AE5AF17007D2032 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				63097F281AE5AF17007D2032 /* TheForecaster WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63FEA3AA1AE59B7900D15D62 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,6 +104,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		63097F0B1AE5AF17007D2032 /* TheForecaster WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TheForecaster WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63097F0E1AE5AF17007D2032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63097F0F1AE5AF17007D2032 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		63097F101AE5AF17007D2032 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		63097F121AE5AF17007D2032 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		63097F141AE5AF17007D2032 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		63097F161AE5AF17007D2032 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		63097F1A1AE5AF17007D2032 /* TheForecaster WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TheForecaster WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63097F201AE5AF17007D2032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63097F221AE5AF17007D2032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		63097F241AE5AF17007D2032 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		63155C8A1AE0085C00CE0D22 /* TheForecaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheForecaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63155C8E1AE0085C00CE0D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63155C8F1AE0085C00CE0D22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +125,7 @@
 		63155C9F1AE0085C00CE0D22 /* TheForecasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheForecasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63155CA41AE0085C00CE0D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63155CA51AE0085C00CE0D22 /* TheForecasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheForecasterTests.swift; sourceTree = "<group>"; };
+		634502A11AE638140063A8CC /* HourlyWeatherInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyWeatherInterfaceController.swift; sourceTree = "<group>"; };
 		63FEA3871AE5205400D15D62 /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
 		63FEA38E1AE59B7900D15D62 /* WeatherShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FEA3911AE59B7900D15D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +138,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		63097F081AE5AF17007D2032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63155C871AE0085C00CE0D22 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,6 +178,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63097F0C1AE5AF17007D2032 /* TheForecaster WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				63097F101AE5AF17007D2032 /* InterfaceController.swift */,
+				634502A11AE638140063A8CC /* HourlyWeatherInterfaceController.swift */,
+				63097F121AE5AF17007D2032 /* NotificationController.swift */,
+				63097F141AE5AF17007D2032 /* GlanceController.swift */,
+				63097F161AE5AF17007D2032 /* Images.xcassets */,
+				63097F0D1AE5AF17007D2032 /* Supporting Files */,
+			);
+			path = "TheForecaster WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		63097F0D1AE5AF17007D2032 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63097F0E1AE5AF17007D2032 /* Info.plist */,
+				63097F0F1AE5AF17007D2032 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63097F1E1AE5AF17007D2032 /* TheForecaster WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				63097F211AE5AF17007D2032 /* Interface.storyboard */,
+				63097F241AE5AF17007D2032 /* Images.xcassets */,
+				63097F1F1AE5AF17007D2032 /* Supporting Files */,
+			);
+			path = "TheForecaster WatchKit App";
+			sourceTree = "<group>";
+		};
+		63097F1F1AE5AF17007D2032 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63097F201AE5AF17007D2032 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		63155C811AE0085C00CE0D22 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +225,8 @@
 				63155CA21AE0085C00CE0D22 /* TheForecasterTests */,
 				63FEA38F1AE59B7900D15D62 /* WeatherShare */,
 				63FEA39E1AE59B7900D15D62 /* WeatherShareTests */,
+				63097F0C1AE5AF17007D2032 /* TheForecaster WatchKit Extension */,
+				63097F1E1AE5AF17007D2032 /* TheForecaster WatchKit App */,
 				63155C8B1AE0085C00CE0D22 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,6 +238,8 @@
 				63155C9F1AE0085C00CE0D22 /* TheForecasterTests.xctest */,
 				63FEA38E1AE59B7900D15D62 /* WeatherShare.framework */,
 				63FEA3981AE59B7900D15D62 /* WeatherShareTests.xctest */,
+				63097F0B1AE5AF17007D2032 /* TheForecaster WatchKit Extension.appex */,
+				63097F1A1AE5AF17007D2032 /* TheForecaster WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,6 +333,39 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		63097F0A1AE5AF17007D2032 /* TheForecaster WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63097F2E1AE5AF17007D2032 /* Build configuration list for PBXNativeTarget "TheForecaster WatchKit Extension" */;
+			buildPhases = (
+				63097F071AE5AF17007D2032 /* Sources */,
+				63097F081AE5AF17007D2032 /* Frameworks */,
+				63097F091AE5AF17007D2032 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63097F1D1AE5AF17007D2032 /* PBXTargetDependency */,
+			);
+			name = "TheForecaster WatchKit Extension";
+			productName = "TheForecaster WatchKit Extension";
+			productReference = 63097F0B1AE5AF17007D2032 /* TheForecaster WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		63097F191AE5AF17007D2032 /* TheForecaster WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63097F2D1AE5AF17007D2032 /* Build configuration list for PBXNativeTarget "TheForecaster WatchKit App" */;
+			buildPhases = (
+				63097F181AE5AF17007D2032 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TheForecaster WatchKit App";
+			productName = "TheForecaster WatchKit App";
+			productReference = 63097F1A1AE5AF17007D2032 /* TheForecaster WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		63155C891AE0085C00CE0D22 /* TheForecaster */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63155CA91AE0085C00CE0D22 /* Build configuration list for PBXNativeTarget "TheForecaster" */;
@@ -243,11 +374,13 @@
 				63155C871AE0085C00CE0D22 /* Frameworks */,
 				63155C881AE0085C00CE0D22 /* Resources */,
 				63FEA3AA1AE59B7900D15D62 /* Embed Frameworks */,
+				63097F2F1AE5AF17007D2032 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				63FEA3A41AE59B7900D15D62 /* PBXTargetDependency */,
+				63097F271AE5AF17007D2032 /* PBXTargetDependency */,
 			);
 			name = TheForecaster;
 			productName = TheForecaster;
@@ -318,6 +451,12 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Piri-Piri";
 				TargetAttributes = {
+					63097F0A1AE5AF17007D2032 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					63097F191AE5AF17007D2032 = {
+						CreatedOnToolsVersion = 6.3;
+					};
 					63155C891AE0085C00CE0D22 = {
 						CreatedOnToolsVersion = 6.3;
 					};
@@ -351,11 +490,31 @@
 				63155C9E1AE0085C00CE0D22 /* TheForecasterTests */,
 				63FEA38D1AE59B7900D15D62 /* WeatherShare */,
 				63FEA3971AE59B7900D15D62 /* WeatherShareTests */,
+				63097F0A1AE5AF17007D2032 /* TheForecaster WatchKit Extension */,
+				63097F191AE5AF17007D2032 /* TheForecaster WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		63097F091AE5AF17007D2032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63097F1B1AE5AF17007D2032 /* TheForecaster WatchKit App.app in Resources */,
+				63097F171AE5AF17007D2032 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63097F181AE5AF17007D2032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63097F231AE5AF17007D2032 /* Interface.storyboard in Resources */,
+				63097F251AE5AF17007D2032 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63155C881AE0085C00CE0D22 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,11 +549,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		63097F071AE5AF17007D2032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63097F131AE5AF17007D2032 /* NotificationController.swift in Sources */,
+				634502A31AE638140063A8CC /* HourlyWeatherInterfaceController.swift in Sources */,
+				63097F111AE5AF17007D2032 /* InterfaceController.swift in Sources */,
+				63097F151AE5AF17007D2032 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63155C861AE0085C00CE0D22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				63155C921AE0085C00CE0D22 /* ViewController.swift in Sources */,
+				634502A21AE638140063A8CC /* HourlyWeatherInterfaceController.swift in Sources */,
 				63FEA3881AE5205400D15D62 /* LocationController.swift in Sources */,
 				63155C901AE0085C00CE0D22 /* AppDelegate.swift in Sources */,
 			);
@@ -428,6 +599,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		63097F1D1AE5AF17007D2032 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63097F191AE5AF17007D2032 /* TheForecaster WatchKit App */;
+			targetProxy = 63097F1C1AE5AF17007D2032 /* PBXContainerItemProxy */;
+		};
+		63097F271AE5AF17007D2032 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63097F0A1AE5AF17007D2032 /* TheForecaster WatchKit Extension */;
+			targetProxy = 63097F261AE5AF17007D2032 /* PBXContainerItemProxy */;
+		};
 		63155CA11AE0085C00CE0D22 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 63155C891AE0085C00CE0D22 /* TheForecaster */;
@@ -451,6 +632,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		63097F211AE5AF17007D2032 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63097F221AE5AF17007D2032 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		63155C931AE0085C00CE0D22 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -470,6 +659,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		63097F291AE5AF17007D2032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TheForecaster WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		63097F2A1AE5AF17007D2032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TheForecaster WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		63097F2B1AE5AF17007D2032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = TheForecaster_WatchKit_Extension;
+				INFOPLIST_FILE = "TheForecaster WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		63097F2C1AE5AF17007D2032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = TheForecaster_WatchKit_Extension;
+				INFOPLIST_FILE = "TheForecaster WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		63155CA71AE0085C00CE0D22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -685,6 +930,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		63097F2D1AE5AF17007D2032 /* Build configuration list for PBXNativeTarget "TheForecaster WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63097F2B1AE5AF17007D2032 /* Debug */,
+				63097F2C1AE5AF17007D2032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63097F2E1AE5AF17007D2032 /* Build configuration list for PBXNativeTarget "TheForecaster WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63097F291AE5AF17007D2032 /* Debug */,
+				63097F2A1AE5AF17007D2032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		63155C851AE0085C00CE0D22 /* Build configuration list for PBXProject "TheForecaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -719,6 +982,7 @@
 				63FEA3A91AE59B7900D15D62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63FEA3AB1AE59B7900D15D62 /* Build configuration list for PBXNativeTarget "WeatherShareTests" */ = {
 			isa = XCConfigurationList;
@@ -727,6 +991,7 @@
 				63FEA3AD1AE59B7900D15D62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

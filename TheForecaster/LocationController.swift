@@ -50,6 +50,12 @@ class LocationController: NSObject, CLLocationManagerDelegate {
                     GlobalConstants.LocationDictionaryNames.kCountry : placemark.country,
                     GlobalConstants.LocationDictionaryNames.kTimestamp : location.timestamp
                 ]
+                
+                var userDefaults = NSUserDefaults(suiteName: "group.TheForecaster.piri-piri.de")
+                userDefaults?.setObject(locationInfo, forKey: GlobalConstants.NSUserDefaultsKey.kLocationKey)
+                userDefaults?.synchronize()
+                
+                
                 NSNotificationCenter.defaultCenter().postNotificationName(GlobalConstants.NotificationNames.kLocationUpdate, object: nil, userInfo: locationInfo)
             }
         })
